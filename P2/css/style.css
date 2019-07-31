@@ -1,0 +1,63 @@
+/* Project 2 CSS */
+
+.section-padding {
+  background-size: cover;
+  background-position: center;
+}
+
+.zigzag-text-bg-1 {
+  background-image: url(../img/bg_1.png);
+}
+
+.zigzag-text-bg-2 {
+  background-image: url(../img/bg_2.png);
+  overflow: hidden;
+}
+
+.zigzag-text {
+  position: relative;
+  z-index: 1;
+  color: #333;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  padding-right: 50px;
+}
+
+.zigzag-text:after {
+  position: absolute;
+  top: 0;
+  left: -4895%;
+  height: 100%;
+  width: 5000%;
+  content: "";
+  background-color: bisque;
+  z-index: -1;
+  transform: skew(14deg);
+}
+
+.zigzag-text-bg-2 .zigzag-text:after {
+  left: auto;
+  right: -4895%;
+}
+.zigzag-text-bg-2 .zigzag-text {
+  padding-left: 50px;
+  padding-right: 0px;
+}
+
+.boxed-btn {
+  background-color: #f34a34;
+  border: 1px solid #f34a34;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.boxed-btn:hover {
+  background-color: transparent;
+  border: 1px solid #f34a34;
+  color: #f34a34;
+  display: inline-block;
+  text-decoration: none;
+}
