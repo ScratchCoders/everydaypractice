@@ -1,0 +1,86 @@
+/* Day 1 CSS */
+
+.section-padding {
+  position: relative;
+}
+
+.section-bg {
+  background-image: url("../img/cloud_bg.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  background-size: cover;
+}
+
+.section-bg::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background-color: #fe345f;
+  opacity: .5;
+}
+
+.contact-form {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.contact-form input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-form h2 {
+  color: #fff;
+}
+
+input:focus, textarea:focus, button:focus {
+  outline: none;
+}
+
+.contact-form input[type=submit] {
+  width: auto;
+  padding: 15px 25px;
+  font-weight: 700;
+  color: #fe345f;
+  background-color: #fff;
+}
+
+
+.right-section {
+  padding-left: 100px;
+}
+
+.right-section-padding {
+  padding: 100px 0px;
+  color: #333;
+}
+
+.right-section h3 {
+  font-size: 20px;
+}
+
+.right-section ul {
+  list-style: disc;
+  margin-top: 30px;
+}
+
+.right-section li {
+  padding-bottom: 20px;
+}
+
+.right-section button {
+  padding: 15px 25px;
+  color: #fff;
+  background-color: #fe345f;
+  border: 0px;
+  margin-top: 176px;
+}
