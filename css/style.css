@@ -1,0 +1,62 @@
+body {
+  color: #666;
+}
+
+h3 {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.video-area {
+  position: relative;
+  padding: 125px 0;
+}
+
+.video-area-bg {
+  background-image: url(../img/bg-img.jpg);
+  background-color: #ddd;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 45%;
+  box-shadow: 0 0 10px #ddd;
+}
+
+.video-play-btn {
+  position: absolute;
+  right: -50px;
+  top: 50%;
+  height: 100px;
+  width: 100px;
+  background: #ed43fe;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 50%;
+  line-height: 100px;
+  margin-top: -50px;
+}
+
+.check-icon {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0;
+  position: relative;
+  padding-left: 30px;
+}
+
+.check-icon li {
+  padding-bottom: 10px;
+}
+
+.check-icon li::before {
+  font-family: fontawesome;
+  content: "\f00c";
+  position: absolute;
+  left: 0;
+
+}
